@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Reserva Plazas De Romeria</title>
+        <meta lang="es">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="formulario1">
+        <header>
+            <div class="logoheader">
+                <img src="media/Logo.png" width="210px">
+                <video autoplay loop muted width="640" height="240"><source src="media/videopromo.mp4" type="video/mp4"></video>
+                </div>
+        </header>
+        <div class="myform">
+            <h2>
+                <p>Contacta con nosotros y te facilitaremos más información</p>
+                <p>Indícanos la fecha y el número de personas para garantizarte la disponibilidad de plazas</p>
+            </h2>
+            <br>
+            <form name="formularioviaje" action="/action_page.php" method="post">
+                <label id="nombreusuario">Nombre y Apellidos *</label>
+                <input type="text" name="nombreusuario" id="nombreusuario" size="30" placeholder="Escribe tu nombre" required>
+                <label id="email">Email</label>
+                <input type="email" name="email" id="email" size="30" placeholder="Correo Electronico">
+                <label id="edad">Edad *</label>
+                <input type="number" id="edad" min="18" max="99" value="18" required>
+                <br><br>
+                <label id="telefono">Teléfono *</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+                <label id="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" size="30" placeholder="Calle, Número, Piso, Puerta">
+                <label id="origen">Origen *</label>
+                <select name="origen" id="origen" required>
+                    <option>Barcelona</option>
+                    <option>Madrid</option>
+                    <option>Malaga</option>
+                    <option>Sevilla</option>
+                    <option>Valencia</option>
+                    <option>Bilbao</option>
+                </select>
+                <br><br>
+                <label id="fechasalida">Fecha de Salida *</label>
+                <input type="date" name="fechasalida" id="fechasalida" required>
+                <label id="habitaciones">Nº Habitaciones</label>
+                <select name="habitaciones" id="habitaciones">
+                    <option>1 Habitacion</option>
+                    <option>2 Habitaciones</option>
+                    <option>3 Habitaciones</option>
+                </select>
+                <label id="personas">Nº de Personas *</label>
+                <select name="personas" id="personas" required>
+                    <option>1 Adulto</option>
+                    <option>1 Adulto + 1 niño</option>
+                    <option>1 Adulto + 2 niños</option>
+                    <option>2 Adultos</option>
+                    <option>2 Adultos + 1 niño</option>
+                    <option>2 adultos + 2 nños</option>
+                    <option>3 Adultos</option>
+                    <option>4 Adultos</option>
+                </select>
+                <br>
+                <p>Otras consultas:</p><textarea name="consultas" id="consultas" rows="8" cols="30" placeholder="Puedes darnos informacion adicional de utilidad"></textarea>
+                <br>
+                <p><i><b>Los campos marcados con * son obligatorios</b></i></p>
+                <br><br>
+                <p><input type="checkbox" name="privacidad" value="yes" required> He leído y acepto la <a href="#"> Política de Privacidad</a>&nbsp;&nbsp;&nbsp; <input type="reset" value="RESET">&nbsp;&nbsp;&nbsp;  <input type="submit" value="CONSULTAR DISPONIBILIDAD"></p>
+            </form>
+        </div>
+
+        <footer class="footer">
+
+            <div>
+            <a href="index.html">Inicio</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="destinos.html">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+            </div>
+            <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <div id="contacto">
+            <p>Dirección: Calle QuintoPino 123, Vigo, España</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@viajesderomeria.com</p>
+            </div>
+
+            <p>© 2025 Viajes De Romeria. Todos los derechos reservados.</p>
+        </footer>
+
+    </body>
+</html>

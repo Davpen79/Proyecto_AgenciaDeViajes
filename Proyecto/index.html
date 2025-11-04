@@ -10,14 +10,19 @@
 
     <body>
         <header>
+            <div class="logoheader">
+                <img src="media/Logo.png" width="210px">
+                <video autoplay loop muted width="640" height="240"><source src="media/videopromo.mp4" type="video/mp4"></video>
+            </div>
             <!--Encabezado de pagina-->
             <h1>Viajes De Romeria</h1>
-            <p>"Te llevamos a donde quieras y cuando quieras"</p>
+            <p class="slogan" id="slogan">"Te llevamos a donde quieras y cuando quieras"</p>
+            <br>
             <!--Navegacion de pagina-->
-            <nav>
+            <nav class="navigationbar">
                 <ul>
-                    <li><a href="#nosotros">Quienes Somos</a></li>
-                    <li><a href="#topdestinos">Principales destinos turísticos del Mundo</a></li>
+                    <li class="navigationlist"><a href="#nosotros">Quienes Somos</a></li>
+                    <li class="navigationlist"><a href="#topdestinos">Principales destinos turísticos del Mundo</a></li>
                     <li class="dropdown">
                         <a class="dropbutton">Destinos Internacionales</a>
                         <div class="dropdown-content">
@@ -26,7 +31,7 @@
                             <a href="#Asia">Asia</a>
                         </div>
                     </li>
-                    <li><a href="#contacto">Destinos Nacionales</a></li>
+                    <li class="navigationlist"><a href="#nacionales">Destinos Nacionales</a></li>
                 </ul>
             </nav>
             
@@ -36,7 +41,9 @@
             <main>
                 <!-- Sección de presentacion -->
                 <section id="nosotros">
+                    <br>
                     <h2>Quienes Somos</h2>
+                    <br>
                     <!-- Artículo sobre quienes somos -->
                     <article>
                         <h3>Viajes De Romeria</h3>
@@ -57,16 +64,15 @@
                         <p><i>En De Romería, creemos que cada viaje debe ser una historia digna de ser vivida. Nos centramos en la sostenibilidad y en fomentar un turismo responsable, alineándose con las comunidades locales y promoviendo el respeto hacia los entornos que se visitan.</i></p>
                     </article>
                 </section>
+                <br>
                 <!-- Seccion de destinos mas importantes -->
                 <section id="topdestinos">
                     <h2>Principales destinos turísticos del Mundo</h2>
+                    <br>
                     <!-- Tabla destinos principales-->
-                    <table border="5">
-                        <caption><b><span style ="color:blue">Principales destinos turísticos del Mundo</span></b></caption>
-                        <colgroup>
-                            <col span="2">
-                            <col style="background-color:rgb(221, 118, 216)">
-                        </colgroup>
+                    <table>
+                        <caption><b>Principales destinos turísticos del Mundo</b></caption>
+                        
                         <thead>
                         <tr>
                             <th>Nº</th>
@@ -151,58 +157,101 @@
                     </table>
 
                     <!-- Barra lateral con contenido relacionado -->
-                    <aside id="asidelateral">
+                    <aside class="textolateral">
                         <h3>Información adicional</h3>
-                        <p>Este contenido está separado del principal pero ofrece enlaces y datos interesantes relacionados.</p>
+                        <p>Para una información más detallada sobre los principales destinos turísticos del mundo puedes consultar los siguientes enlaces:</p>
                         <ul>
-                            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header" target="_blank">MDN: &lt;header&gt;</a></li>
-                            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside" target="_blank">MDN: &lt;aside&gt;</a></li>
-                            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer" target="_blank">MDN: &lt;footer&gt;</a></li>
+                            <li><a href="https://roadgenius.com/es/statistics/tourism/" target="_blank">Ranking de turismo mundial 2023</a></li>
+                            <li><a href="https://dondedormiresdespertar.es/blog/los-10-destinos-turisticos-mas-visitados-de-espana/" target="_blank">Los 10 destinos turisticos mas visitados de España</a></li>
+                            <li><a href="https://es.wikipedia.org/wiki/Anexo:Destinos_tur%C3%ADsticos_mundiales" target="_blank">Destinos turísticos mundiales</a></li>
                         </ul>
                     </aside>
 
                 </section>
+                <br>
                 <!-- Destinos Internacionales-->
                 <section id="Internacional">
                     <h2>Nuestros destinos Internacionales</h2>
+                    <br>
+                    <article>
                     <h4 id="Europa">Destinos Europeos</h4>
                         <p>Descubre Europa con nuestra selección de destinos imperdibles. ¡Disfruta nuestras tarifas exclusivas y vive experiencias inolvidables en el Viejo Continente!</p>
+                        <div class="destinoseuropeos">
                         <ol type="I">
-                            <li><strong> París, Francia</strong> - Vuelo de ida y vuelta- 3 noches en hotel 4 estrellas- Tour guiado por la Torre Eiffel</li>
-                            <li><strong> Roma, Italia</strong> - Vuelo de ida y vuelta- 4 noches en hotel boutique- Entrada a los Museos Vaticanos y Coliseo</li>
-                            <li><strong> Atenas, Grecia</strong> - Vuelo de ida y vuelta- 3 noches en hotel 3 estrellas- Visita guiada por La Acrópolis</li>
-                            <li><strong> Praga, República Checa</strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Paseo en barco por el río Moldava</li>
-                            <li><strong> Londres, Reino Unido</strong> - Vuelo de ida y vuelta- 3 noches en hotel 4 estrellas- Tour por el Palacio de Buckingham</li>
+                            <li><strong> <a href="destinos.html#Paris" target="_blank">París, Francia</a></strong> - Vuelo de ida y vuelta- 3 noches en hotel 4 estrellas- Tour guiado por la Torre Eiffel</li>
+                            <li><strong> <a href="destinos.html#Roma" target="_blank">Roma, Italia</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel boutique- Entrada a los Museos Vaticanos y Coliseo</li>
+                            <li><strong> <a href="destinos.html#Atenas" target="_blank">Atenas, Grecia</a></strong> - Vuelo de ida y vuelta- 3 noches en hotel 3 estrellas- Visita guiada por La Acrópolis</li>
+                            <li><strong> <a href="destinos.html#Praga" target="_blank">Praga, República Checa</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Paseo en barco por el río Moldava</li>
+                            <li><strong> <a href="destinos.html#Londres" target="_blank">Londres, Reino Unido</a></strong> - Vuelo de ida y vuelta- 3 noches en hotel 4 estrellas- Tour por el Palacio de Buckingham</li>
                         </ol>
-                        <br>
+                        </div>
+                    </article>    
+                    <br>
+                    <article>    
                     <h4 id="America">Destinos Americanos</h4>
-                        <br>
+                        
                         <p>Conéctate con lo mejor de América y descubre paisajes increíbles y culturas fascinantes. ¡Aprovecha nuestras ofertas exclusivas!</p>
                         <ol type="1">
-                            <li><strong> Nueva York, EE. UU.</strong> - Vuelo de ida y vuelta- 4 noches en hotel 4 estrellas- Paseo en barco por el río Hudson</li>
-                            <li><strong> Cancún, México</strong> - Vuelo de ida y vuelta- 5 noches en resort todo incluido- Excursión a Chichén Itzá</li>
-                            <li><strong> Rio de Janeiro, Brasil</strong> - Vuelo de ida y vuelta- 7 noches en hotel frente a la playa- Tour por los alrededores del Cristo Redentor</li>
-                            <li><strong> Buenos Aires, Argentina</strong> - Vuelo de ida y vuelta- 5 noches en hotel boutique- Cena tradicional con espectáculo de tango</li>
-                            <li><strong> Toronto, Canadá</strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Visita guiada de un día a las Cataratas del Niágara</li>
+                            <li><strong> <a href="destinos.html#NewYork" target="_blank">Nueva York, EE. UU.</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel 4 estrellas- Paseo en barco por el río Hudson</li>
+                            <li><strong> <a href="destinos.html#Cancun" target="_blank">Cancún, México</a></strong> - Vuelo de ida y vuelta- 5 noches en resort todo incluido- Excursión a Chichén Itzá</li>
+                            <li><strong> <a href="destinos.html#Rio" target="_blank">Rio de Janeiro, Brasil</a></strong> - Vuelo de ida y vuelta- 7 noches en hotel frente a la playa- Tour por los alrededores del Cristo Redentor</li>
+                            <li><strong> <a href="destinos.html#BuenosAires" target="_blank">Buenos Aires, Argentina</a></strong> - Vuelo de ida y vuelta- 5 noches en hotel boutique- Cena tradicional con espectáculo de tango</li>
+                            <li><strong> <a href="destinos.html#Toronto" target="_blank"> Toronto, Canadá</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Visita guiada de un día a las Cataratas del Niágara</li>
                         </ol>
-                        <br>
+                    </article>    
+                    <br>
+                    <article>
                     <h4 id="Asia">Destinos Asiaticos</h4>
-                        <br>
+                        
                         <p>Descubre la diversidad de Asia y déjate enamorar por sus culturas, paisajes y gastronomía. ¡Benefíciate de nuestras increíbles ofertas!</p>
                         <ol type="a">
-                            <li><strong> Tokio, Japón</strong> - Vuelo de ida y vuelta- 4 noches en hotel 4 estrellas- Tour cultural por Tokio</li>
-                            <li><strong> Bali, Indonesia</strong> - Vuelo de ida y vuelta- 7 noches en villa privada- Excursión a Ubud y el Templo de Tanah Lot</li>
-                            <li><strong> Bangkok, Tailandia</strong> - Vuelo de ida y vuelta- 5 noches en hotel 3 estrellas- Paseo en barco por el río Chao Phraya</li>
-                            <li><strong> Seúl, Corea del Sur</strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Visita al Palacio Gyeongbokgung</li>
-                            <li><strong> Kioto, Japón</strong> - Vuelo de ida y vuelta- 5 noches en ryokan tradicional- Tour por los templos de Kioto</li>
+                            <li><strong> <a href="destinos.html#Tokio" target="_blank">Tokio, Japón</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel 4 estrellas- Tour cultural por Tokio</li>
+                            <li><strong> <a href="destinos.html#Bali" target="_blank">Bali, Indonesia</a></strong> - Vuelo de ida y vuelta- 7 noches en villa privada- Excursión a Ubud y el Templo de Tanah Lot</li>
+                            <li><strong> <a href="destinos.html#Bangkok" target="_blank">Bangkok, Tailandia</a></strong> - Vuelo de ida y vuelta- 5 noches en hotel 3 estrellas- Paseo en barco por el río Chao Phraya</li>
+                            <li><strong> <a href="destinos.html#Seul" target="_blank">Seúl, Corea del Sur</a></strong> - Vuelo de ida y vuelta- 4 noches en hotel céntrico- Visita al Palacio Gyeongbokgung</li>
+                            <li><strong> <a href="destinos.html#Kioto" target="_blank">Kioto, Japón</a></strong> - Vuelo de ida y vuelta- 5 noches en ryokan tradicional- Tour por los templos de Kioto</li>
                         </ol>
-                </section> 
+                    </article>
+                </section>
+                <br> 
+                <!-- Destinos Nacionales -->
+                <section id="nacionales">
+                    <h2>Nuestros destinos Nacionales</h2>
+                    <br>
+                    <p>¿Porqué viajar al extranjero si todavía hay mucho que descubrir en nuestro propio país? Descubre los destinos turísticos patrios mas insospechados.</p>
+                    <ol type="i">
+                        <li><strong> <a href="destinos.html#Barcelona" target="_blank">Barcelona</a></strong> - Tour de 7 días que incluye visitas a la Sagrada Familia y Park Güell. Alojamiento y desayunos incluidos.</li>
+                        <li><strong> <a href="destinos.html#Madrid" target="_blank">Madrid</a></strong> - Paquete cultural de 5 días con entradas al Museo del Prado y tours por el Palacio Real. Incluye traslados.</li>
+                        <li><strong> <a href="destinos.html#Mallorca" target="_blank">Mallorca</a></strong> - Escapada de 4 noches con media pensión en un hotel frente al mar. Incluye visitas a playas y excursiones a la naturaleza.</li>
+                        <li><strong> <a href="destinos.html#Tenerife" target="_blank">Tenerife</a></strong> - Plan de 5 noches que abarca el Parque Nacional del Teide y actividades acuáticas. Alojamiento con desayuno.</li>
+                        <li><strong> <a href="destinos.html#Sevilla" target="_blank">Sevilla</a></strong> - Tour de 6 días que incluye un espectáculo de flamenco y una visita al Alcázar. Alojamiento y algunas comidas.</li>
+                        <li><strong> <a href="destinos.html#Malaga" target="_blank">Malaga</a></strong> - Paquete de 3 días con visitas a museos y tiempo libre en la playa. Incluye un tour en autobús turístico.</li>
+                    </ol>
+                </section>
             </main>
             
         </div>
 
-        <footer>
-            <p>© 2025 Mi Página de Ejemplo. Todos los derechos reservados.</p>
+        <footer class="footer">
+
+            <div>
+            <a href="#slogan">Inicio</a>
+            <a href="#Internacional">Destinos</a>
+            <a href="destinos.html">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+            </div>
+            <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <div id="contacto">
+            <p>Dirección: Calle QuintoPino 123, Vigo, España</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@viajesderomeria.com</p>
+            </div>
+
+            <p>© 2025 Viajes De Romeria. Todos los derechos reservados.</p>
         </footer>
 
     </body>

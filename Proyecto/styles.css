@@ -1,5 +1,5 @@
 
-#asidelateral {
+.textolateral {
   margin-top: -300px;
   width: 30%;
   padding-left: 15px;
@@ -9,40 +9,396 @@
   background-color: lightgray;
 }
 
+.logoheader {
+  display: flex;
+  padding-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #e48407;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
 }
 
-h2, p {
+body#destinos {
+  background-color: beige;
+}
+
+.slogan {
+  text-align: center;
   margin: 10px;
 }
 
-nav{
-    background-color: #38444d;
+h1 {
+  text-align: center;
+  margin: 15px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+h2 {
+  margin: 15px;
+  color: rgb(39, 51, 214);
+}
+
+h3 {
+  margin: 13px;
+}
+
+h4 {
+  margin: 18px;
+}
+
+h5 {
+  margin: 22px;
+}
+
+p {
+  margin: 20px;
+}
+
+footer {
+  margin: 200px;
+}
+
+table, th, td {
+  border: 2px, solid, crimson;
+  margin: 30px;
+  padding: 3px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(25, 230, 59);
+}
+
+caption {
+  color: rgb(255, 255, 255);
+  background-color: cornflowerblue;
+  font-size: larger;
+}
+
+section#nosotros {
+  border: 1px, solid, yellow;
+  margin: 50px;
+  background-color: rgb(238, 238, 161);
+}
+
+section#Internacional {
+  border: 1px, solid, green;
+  margin: 50px;
+  background-color: rgb(148, 247, 214);
+}
+
+section#nacionales {
+  border: 1px, solid, rgb(243, 6, 204);
+  margin: 50px;
+  background-color: rgb(215, 176, 235);
+}
+
+.textolateral {
+  margin-right: 30px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+article {
+  margin: 10px;
+}
+
+div#Paris {
+  border: 2px, solid, black;
+  background-image: url(media/paris.jpg);
+  background-position: right;
+  background-size: 400px;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Paris p{
+  margin-right: 400px;
+}
+
+div#Roma {
+  border: 2px, solid, black;
+  background-image: url(media/roma.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Roma p{
+  margin-right: 400px;
+}
+
+div#Atenas {
+  border: 2px, solid, black;
+  background-image: url(media/atenas.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Atenas p{
+  margin-right: 400px;
+}
+
+div#Praga {
+  border: 2px, solid, black;
+  background-image: url(media/praga.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Praga p{
+  margin-right: 400px;
+}
+
+div#Londres {
+  border: 2px, solid, black;
+  background-image: url(media/londres.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Londres p{
+  margin-right: 400px;
+}
+
+div#NewYork {
+  border: 2px, solid, black;
+  background-image: url(media/newyork.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#NewYork p{
+  margin-right: 400px;
+}
+
+div#Cancun {
+  border: 2px, solid, black;
+  background-image: url(media/cancun.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Cancun p{
+  margin-right: 400px;
+}
+
+div#Rio {
+  border: 2px, solid, black;
+  background-image: url(media/rio.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Rio p{
+  margin-right: 400px;
+}
+
+div#BuenosAires {
+  border: 2px, solid, black;
+  background-image: url(media/buenosaires.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#BuenosAires p{
+  margin-right: 400px;
+}
+
+div#Toronto {
+  border: 2px, solid, black;
+  background-image: url(media/toronto.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Toronto p{
+  margin-right: 400px;
+}
+
+div#Tokio {
+  border: 2px, solid, black;
+  background-image: url(media/tokio.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Tokio p{
+  margin-right: 400px;
+}
+
+div#Bali {
+  border: 2px, solid, black;
+  background-image: url(media/bali.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Bali p{
+  margin-right: 400px;
+}
+
+div#Bangkok {
+  border: 2px, solid, black;
+  background-image: url(media/bangkok.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Bangkok p{
+  margin-right: 400px;
+}
+
+div#Seul {
+  border: 2px, solid, black;
+  background-image: url(media/seul.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Seul p{
+  margin-right: 400px;
+}
+
+div#Kioto {
+  border: 2px, solid, black;
+  background-image: url(media/kioto.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Kioto p{
+  margin-right: 400px;
+}
+
+div#Barcelona {
+  border: 2px, solid, black;
+  background-image: url(media/barcelona.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Barcelona p{
+  margin-right: 400px;
+}
+
+div#Madrid {
+  border: 2px, solid, black;
+  background-image: url(media/madrid.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Madrid p{
+  margin-right: 400px;
+}
+
+div#Mallorca {
+  border: 2px, solid, black;
+  background-image: url(media/mallorca.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Mallorca p{
+  margin-right: 400px;
+}
+
+div#Tenerife {
+  border: 2px, solid, black;
+  background-image: url(media/tenerife.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Tenerife p{
+  margin-right: 400px;
+}
+
+div#Sevilla {
+  border: 2px, solid, black;
+  background-image: url(media/sevilla.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
   
 }
-
-li {
-  float: left;
+div#Sevilla p{
+  margin-right: 400px;
 }
 
-li a, .dropbtn {
+div#Malaga {
+  border: 2px, solid, black;
+  background-image: url(media/malaga.jpg);
+  background-size: 400px;
+  background-position: right;
+  width: 1000px;
+  background-repeat: no-repeat;
+}
+div#Malaga p{
+  margin-right: 400px;
+}
+
+nav{
+    background-color: #e48407;
+}
+
+
+.navigationbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li.navigationlist a, .dropbutton {
   display: inline-block;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.navigationbar li a:hover, .dropdown:hover .dropbutton {
   background-color: red;
 }
 
@@ -71,4 +427,37 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+body#formulario1 {
+  background-color: beige;
+}
+
+.myform {
+  align-items: center;
+  border-style: ridge;
+  border-radius: 15px;
+  margin: 100px;
+  padding: 50px;
+  background-color: bisque;
+}
+
+.myform h2 {
+  text-align: center;
+}
+
+input[type=text], input[type=email], input[type=number] {
+  margin-right: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+input[type=date], select, input[type=tel], textarea {
+  margin-right: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto;
 }
