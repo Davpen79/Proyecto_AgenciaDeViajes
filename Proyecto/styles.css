@@ -1,7 +1,8 @@
-
+/* Estilo para elemento aside*/
 .textolateral {
   margin-top: -300px;
   width: 30%;
+  margin-right: 30px;
   padding-left: 15px;
   margin-left: 15px;
   float: right;
@@ -9,6 +10,7 @@
   background-color: lightgray;
 }
 
+/* Estilos para Encabezado y Logo */
 .logoheader {
   display: flex;
   padding-left: 100px;
@@ -17,6 +19,56 @@
   background-color: #e48407;
 }
 
+/* Estilos para barra de navegación */
+nav{
+    background-color: #e48407;
+}
+
+.navigationbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li.navigationlist a, .dropbutton {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigationbar li a:hover, .dropdown:hover .dropbutton {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para cuerpos */
 body {
   margin: 0;
   padding: 0;
@@ -28,11 +80,16 @@ body#destinos {
   background-color: beige;
 }
 
+article {
+  margin: 10px;
+}
+
 .slogan {
   text-align: center;
   margin: 10px;
 }
 
+/* Estilos de encabezados */
 h1 {
   text-align: center;
   margin: 15px;
@@ -59,47 +116,9 @@ p {
   margin: 20px;
 }
 
+/* Estilos para pie de pagina */
 footer {
   margin: 200px;
-}
-
-table, th, td {
-  border: 2px, solid, crimson;
-  margin: 30px;
-  padding: 3px;
-  text-align: center;
-}
-
-th {
-  background-color: rgb(25, 230, 59);
-}
-
-caption {
-  color: rgb(255, 255, 255);
-  background-color: cornflowerblue;
-  font-size: larger;
-}
-
-section#nosotros {
-  border: 1px, solid, yellow;
-  margin: 50px;
-  background-color: rgb(238, 238, 161);
-}
-
-section#Internacional {
-  border: 1px, solid, green;
-  margin: 50px;
-  background-color: rgb(148, 247, 214);
-}
-
-section#nacionales {
-  border: 1px, solid, rgb(243, 6, 204);
-  margin: 50px;
-  background-color: rgb(215, 176, 235);
-}
-
-.textolateral {
-  margin-right: 30px;
 }
 
 .footer {
@@ -123,9 +142,44 @@ section#nacionales {
   margin: 0 10px;
 }
 
-article {
-  margin: 10px;
+/* Estilos para tablas */
+table, th, td {
+  border: 2px, solid, crimson;
+  margin: 30px;
+  padding: 3px;
+  text-align: center;
 }
+
+th {
+  background-color: rgb(25, 230, 59);
+}
+
+caption {
+  color: rgb(255, 255, 255);
+  background-color: cornflowerblue;
+  font-size: larger;
+}
+
+/* Estilos para Secciones en el index */
+section#nosotros {
+  border: 1px, solid, yellow;
+  margin: 50px;
+  background-color: rgb(238, 238, 161);
+}
+
+section#Internacional {
+  border: 1px, solid, green;
+  margin: 50px;
+  background-color: rgb(148, 247, 214);
+}
+
+section#nacionales {
+  border: 1px, solid, rgb(243, 6, 204);
+  margin: 50px;
+  background-color: rgb(215, 176, 235);
+}
+
+/* Estilos para div en Pagina Destinos */
 
 div#Paris {
   border: 2px, solid, black;
@@ -380,55 +434,7 @@ div#Malaga p{
   margin-right: 400px;
 }
 
-nav{
-    background-color: #e48407;
-}
-
-
-.navigationbar ul {
-  list-style-type: none;
-  display: flex;
-}
-
-li.navigationlist a, .dropbutton {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navigationbar li a:hover, .dropdown:hover .dropbutton {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+/* Estilos Pagina formulario */
 body#formulario1 {
   background-color: beige;
 }
