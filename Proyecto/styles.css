@@ -1,5 +1,12 @@
+/* Estilo para seccion topdestinos */
+section#topdestinos {
+  border: 5px, double, black;
+  margin: 4%;
+}
+
 /* Estilo para elemento aside*/
 .textolateral {
+  border: 3px, solid, grey;
   margin-top: -300px;
   width: 30%;
   margin-right: 30px;
@@ -93,23 +100,32 @@ article {
 h1 {
   text-align: center;
   margin: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
   margin: 15px;
   color: rgb(39, 51, 214);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h3 {
   margin: 13px;
+  color: darkorchid;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h4 {
   margin: 18px;
+  color: brown;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h5 {
   margin: 22px;
+  color: rgb(2, 158, 62);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
 }
 
 p {
@@ -162,26 +178,38 @@ caption {
 
 /* Estilos para Secciones en el index */
 section#nosotros {
-  border: 1px, solid, yellow;
+  border: 3px, solid, yellow;
   margin: 50px;
+  padding: auto;
   background-color: rgb(238, 238, 161);
 }
 
 section#Internacional {
-  border: 1px, solid, green;
+  border: 3px, solid, green;
   margin: 50px;
+  padding: auto;
   background-color: rgb(148, 247, 214);
 }
 
 section#nacionales {
-  border: 1px, solid, rgb(243, 6, 204);
+  border: 3px, solid, rgb(243, 6, 204);
   margin: 50px;
+  padding: auto;
   background-color: rgb(215, 176, 235);
+}
+
+/* Estilo para main en destinos.html */
+
+.main_destinos{
+  border: 3px, dotted, red;
+  margin: 5%;
+  padding-bottom: 10px;
 }
 
 /* Estilos para div en Pagina Destinos */
 
 div#Paris {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/paris.jpg);
   background-position: right;
@@ -194,6 +222,7 @@ div#Paris p{
 }
 
 div#Roma {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/roma.jpg);
   background-size: 400px;
@@ -206,6 +235,7 @@ div#Roma p{
 }
 
 div#Atenas {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/atenas.jpg);
   background-size: 400px;
@@ -218,6 +248,7 @@ div#Atenas p{
 }
 
 div#Praga {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/praga.jpg);
   background-size: 400px;
@@ -230,6 +261,7 @@ div#Praga p{
 }
 
 div#Londres {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/londres.jpg);
   background-size: 400px;
@@ -242,6 +274,7 @@ div#Londres p{
 }
 
 div#NewYork {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/newyork.jpg);
   background-size: 400px;
@@ -254,6 +287,7 @@ div#NewYork p{
 }
 
 div#Cancun {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/cancun.jpg);
   background-size: 400px;
@@ -266,6 +300,7 @@ div#Cancun p{
 }
 
 div#Rio {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/rio.jpg);
   background-size: 400px;
@@ -278,6 +313,7 @@ div#Rio p{
 }
 
 div#BuenosAires {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/buenosaires.jpg);
   background-size: 400px;
@@ -290,6 +326,7 @@ div#BuenosAires p{
 }
 
 div#Toronto {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/toronto.jpg);
   background-size: 400px;
@@ -302,6 +339,7 @@ div#Toronto p{
 }
 
 div#Tokio {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/tokio.jpg);
   background-size: 400px;
@@ -314,6 +352,7 @@ div#Tokio p{
 }
 
 div#Bali {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/bali.jpg);
   background-size: 400px;
@@ -326,6 +365,7 @@ div#Bali p{
 }
 
 div#Bangkok {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/bangkok.jpg);
   background-size: 400px;
@@ -338,6 +378,7 @@ div#Bangkok p{
 }
 
 div#Seul {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/seul.jpg);
   background-size: 400px;
@@ -350,6 +391,7 @@ div#Seul p{
 }
 
 div#Kioto {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/kioto.jpg);
   background-size: 400px;
@@ -362,6 +404,7 @@ div#Kioto p{
 }
 
 div#Barcelona {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/barcelona.jpg);
   background-size: 400px;
@@ -374,6 +417,7 @@ div#Barcelona p{
 }
 
 div#Madrid {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/madrid.jpg);
   background-size: 400px;
@@ -386,6 +430,7 @@ div#Madrid p{
 }
 
 div#Mallorca {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/mallorca.jpg);
   background-size: 400px;
@@ -398,6 +443,7 @@ div#Mallorca p{
 }
 
 div#Tenerife {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/tenerife.jpg);
   background-size: 400px;
@@ -410,6 +456,7 @@ div#Tenerife p{
 }
 
 div#Sevilla {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/sevilla.jpg);
   background-size: 400px;
@@ -423,6 +470,7 @@ div#Sevilla p{
 }
 
 div#Malaga {
+  margin: 10px;
   border: 2px, solid, black;
   background-image: url(media/malaga.jpg);
   background-size: 400px;
