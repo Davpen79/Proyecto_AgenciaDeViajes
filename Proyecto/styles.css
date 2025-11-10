@@ -104,7 +104,7 @@ h1 {
 }
 
 h2 {
-  margin: 15px;
+  margin: 20px;
   color: rgb(39, 51, 214);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -116,7 +116,7 @@ h3 {
 }
 
 h4 {
-  margin: 18px;
+  margin: 22px;
   color: brown;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -497,6 +497,13 @@ body#formulario1 {
 }
 
 .myform h2 {
+  text-align: center;
+}
+
+.myform h3 {
+  margin: 20px;
+  color: rgb(39, 51, 214);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
 

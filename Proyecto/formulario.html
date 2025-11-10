@@ -9,7 +9,7 @@
     <body id="formulario1">
         <header>
             <div class="logoheader">
-                <img src="media/Logo.png" width="210px">
+                <img src="media/Logo.png" alt="Logo" width="210">
                 <video autoplay loop muted width="640" height="240"><source src="media/videopromo.mp4" type="video/mp4"></video>
                 </div>
         </header>
@@ -18,50 +18,52 @@
             <!-- Formulario genérico -->
             <div class="myform">
                 <h2>
-                    <p>Contacta con nosotros y te facilitaremos más información</p>
-                    <p>Indícanos la fecha y el número de personas para garantizarte la disponibilidad de plazas</p>
+                    Contacta con nosotros y te facilitaremos más información
                 </h2>
+                <h3>
+                    Indícanos la fecha y el número de personas para garantizarte la disponibilidad de plazas
+                </h3>
                 <br>
                 <form name="formularioviaje" action="/action_page.php" method="post">
-                    <label id="nombreusuario">Nombre y Apellidos *</label>
+                    <label for="nombreusuario">Nombre y Apellidos *</label>
                     <input type="text" name="nombreusuario" id="nombreusuario" size="30" placeholder="Escribe tu nombre" required>
-                    <label id="email">Email</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email" id="email" size="30" placeholder="Correo Electronico">
-                    <label id="edad">Edad *</label>
+                    <label for="edad">Edad *</label>
                     <input type="number" id="edad" min="18" max="99" value="18" required>
                     <br><br>
-                    <label id="telefono">Teléfono *</label>
+                    <label for="telefono">Teléfono *</label>
                     <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
-                    <label id="direccion">Dirección</label>
+                    <label for="direccion">Dirección</label>
                     <input type="text" name="direccion" id="direccion" size="30" placeholder="Calle, Número, Piso, Puerta">
-                    <label id="origen">Origen *</label>
+                    <label for="origen">Origen *</label>
                     <select name="origen" id="origen" required>
-                        <option>Barcelona</option>
-                        <option>Madrid</option>
-                        <option>Malaga</option>
-                        <option>Sevilla</option>
-                        <option>Valencia</option>
-                        <option>Bilbao</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Malaga">Malaga</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Valencia">Valencia</option>
+                        <option value="Bilbao">Bilbao</option>
                     </select>
                     <br><br>
-                    <label id="fechasalida">Fecha de Salida *</label>
+                    <label for="fechasalida">Fecha de Salida *</label>
                     <input type="date" name="fechasalida" id="fechasalida" required>
-                    <label id="habitaciones">Nº Habitaciones</label>
+                    <label for="habitaciones">Nº Habitaciones</label>
                     <select name="habitaciones" id="habitaciones">
-                        <option>1 Habitacion</option>
-                        <option>2 Habitaciones</option>
-                        <option>3 Habitaciones</option>
+                        <option value="1">1 Habitacion</option>
+                        <option value="2">2 Habitaciones</option>
+                        <option value="3">3 Habitaciones</option>
                     </select>
-                    <label id="personas">Nº de Personas *</label>
+                    <label for="personas">Nº de Personas *</label>
                     <select name="personas" id="personas" required>
-                        <option>1 Adulto</option>
-                        <option>1 Adulto + 1 niño</option>
-                        <option>1 Adulto + 2 niños</option>
-                        <option>2 Adultos</option>
-                        <option>2 Adultos + 1 niño</option>
-                        <option>2 adultos + 2 nños</option>
-                        <option>3 Adultos</option>
-                        <option>4 Adultos</option>
+                        <option value="1adulto">1 Adulto</option>
+                        <option value="1adulto1niño">1 Adulto + 1 niño</option>
+                        <option value="1adulto2niños">1 Adulto + 2 niños</option>
+                        <option value="2adultos">2 Adultos</option>
+                        <option value="2adultos1niño">2 Adultos + 1 niño</option>
+                        <option value="2adultos2niños">2 adultos + 2 nños</option>
+                        <option value="3adultos" >3 Adultos</option>
+                        <option value="4adultos">4 Adultos</option>
                     </select>
                     <br>
                     <p>Otras consultas:</p><textarea name="consultas" id="consultas" rows="8" cols="30" placeholder="Puedes darnos informacion adicional de utilidad"></textarea>
